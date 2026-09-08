@@ -32,7 +32,7 @@ public class Lab2 {
             switch (userInput) {
                 case 1: {
                     clearConsole();
-                    RAT();
+                    R_A_T();
                     clearConsole();
                     break;
                 }
