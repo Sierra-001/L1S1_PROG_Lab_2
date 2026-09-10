@@ -78,7 +78,31 @@ public class Lab2 {
             }
         }
 
-        static void  R_A_T() {}
+        static void  R_A_T() {
+            Scanner scanner = new Scanner(System.in);
+
+            double base;
+            double height;
+            double hypotenuse;
+            double perimeter;
+            double area;
+
+            System.out.print("Enter the base: ");
+            base = scanner.nextDouble();
+
+            System.out.print("Enter the height: ");
+            height = scanner.nextDouble();
+
+            hypotenuse = Math.sqrt(Math.pow(base,2) + Math.pow(height,2));
+            perimeter = base + height + hypotenuse;
+            area = 0.5 * base * height;
+
+            System.out.printf("The hypotenuse is: %.2f\n", hypotenuse);
+            System.out.printf("The perimeter is: %.2f\n", perimeter);
+            System.out.printf("The area is: %.2f", area);
+
+            scanner.close();
+        }
 
         static void  Rectangle() {}
 
